@@ -357,6 +357,14 @@ figcaption small {
 	text-decoration: none;
 }
 
+.read-more {
+	background: #f5f5f5;
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 15px 0;
+	padding: 11px;
+}
 /******** Sidebar ********/
 #sidebar {
 	background: lightgrey;
