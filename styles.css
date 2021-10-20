@@ -429,6 +429,7 @@ figcaption small {
 	grid-template-rows: max-content max-content;
 }
 
+/**** Sidebar Navbar ****/
 .sidebar-nav {
 	font-family: "Titillium Web", Helvetica, sans-serif;
 	grid-area: sidebar-nav;
@@ -436,7 +437,7 @@ figcaption small {
 
 .sidebar-nav-list {
 	display: grid;
-	gap: 4px;
+	gap: 3px;
 	grid-template-columns: max-content repeat(3, 1fr);
 
 }
@@ -458,6 +459,42 @@ figcaption small {
 .sidebar-nav-list > li:hover {
 	cursor: pointer;
 	filter: brightness(0.85);
+}
+
+/**** Sidebar Trending Articles ****/
+.sidebar-articles {
+	display: grid;
+	gap: 3px;
+
+}
+
+.sidebar-articles > li {
+	align-items: center;
+	background: #f5f5f5;
+	display: grid;
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	grid-template-areas:
+		"article-link article-number";
+	padding: 11px;
+}
+
+.sidebar-articles a {
+	color: #4d4d4d;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 25px;
+	text-decoration: none;
+}
+
+.sidebar-articles a:hover {
+	color: var(--accent-color);
+	cursor: pointer;
+}
+
+.sidebar-article-number {
+	color: var(--accent-color);
+	font-size: 32px;
+	font-weight: 700;
 }
 
 /******** Links  ********/
