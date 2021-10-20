@@ -269,14 +269,14 @@ h1 {
 	grid-area: heading;
 }
 
-.links {
+.social-links {
 	display: flex;
 	gap: 10px;
 	grid-area: links;
 	justify-content: flex-start;
 }
 
-.links > button {
+.social-links button {
 	border: none;
 	border-radius: 50%;
 	height: 30px;
@@ -284,11 +284,11 @@ h1 {
 	width: 30px;
 }
 
-.links > button:hover {
+.social-links button:hover {
 	filter: brightness(1.2);
 }
 
-.links a {
+.social-links a {
 	color: white;
 }
 
@@ -513,9 +513,21 @@ figcaption small {
 
 /******** Links  ********/
 #links {
-	background: lightgreen;
+	border: 1px solid lightgreen;
+	display: grid;
 	grid-area: links;
+	grid-template-areas:
+		"social-links   magazine";
 }
+
+.links-below {
+	grid-area: social-links;
+}
+
+.new-scientist-magazine {
+	grid-area: magazine;
+}
+
 
 /******** Related Content ********/
 #related-content {
