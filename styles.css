@@ -219,12 +219,112 @@ body {
 
 }
 
-/******** Main *********/
+/*************** Main ****************/
 #main {
 	border: 2px solid lightblue;
+	display: grid;
+	gap: 15px;
+	grid-template-areas:
+		"main-header"
+		"main-article"
+		"newsletter-aside";
 	grid-area: main;
 }
 
+.main-header {
+	cursor: pointer;
+	display: grid;
+	font-family: "Titillium Web", Helvetiac, sans-serif;	
+	gap: 15px;
+	grid-area: main-header;
+	grid-template-areas:
+		"heading"
+		"links"
+		"category-time"
+		"author";
+}
+
+h1 {
+	cursor: text;
+	font-size: 50px;
+	font-weight: 700;
+	grid-area: heading;
+}
+
+.links {
+	display: flex;
+	gap: 10px;
+	grid-area: links;
+	justify-content: flex-start;
+}
+
+.links > button {
+	border: none;
+	border-radius: 50%;
+	height: 30px;
+	transition-duration: 0.2s;
+	width: 30px;
+}
+
+.links > button:hover {
+	filter: brightness(1.2);
+}
+
+.links a {
+	color: white;
+}
+
+.fa {
+	font-size: 20px;
+}
+.facebook-icon {
+	background: #3b5998;
+}
+
+.twitter-icon {
+	background: #28a1f2;
+}
+
+.whatsapp-icon {
+	background: #4dc247;
+}
+
+.linkedin-icon {
+	background: #1b77b5;
+}
+
+.reddit-icon {
+	background: #f95701;
+}
+
+.utility-icon {
+	background: #999;
+}
+
+.category-time {
+	color: #4d4d4d;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.category-time strong {
+	color: #484848;
+	font-weight: 700;
+}
+
+.category-time strong:hover {
+	text-decoration: underline;
+}
+
+.author {
+	color: #4d4d4d;
+}
+
+.author a {
+	color: var(--accent-color);
+	font-weight: 700;
+	text-decoration: none;
+}
 /******** Sidebar ********/
 #sidebar {
 	background: lightgrey;
