@@ -224,6 +224,7 @@ body {
 /*************** Main ****************/
 #main {
 	border: 2px solid lightblue;
+	color: #4d4d4d;
 	display: grid;
 	gap: 15px;
 	grid-area: main;
@@ -232,6 +233,8 @@ body {
 		"main-article"
 		"newsletter-aside";
 }
+
+
 /**** Header.Main-Header ****/
 .main-header {
 	cursor: pointer;
@@ -329,7 +332,30 @@ h1 {
 }
 
 /**** Main > Article.Main-Article ****/
+.main-article {
+	display: grid;
+	font-family: "PT Serif", Georgia, serif;
+	font-size: 17px;
+	gap: 15px;
+	line-height: 25px;
+}
 
+.main-article figcaption {
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 15px;
+}
+
+figcaption small {
+	font-weight: 400;
+}
+
+.main-article a {
+	color: var(--accent-color);
+	cursor: pointer;
+	text-decoration: none;
+}
 
 /******** Sidebar ********/
 #sidebar {
