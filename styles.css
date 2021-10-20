@@ -79,19 +79,23 @@ body {
 
 /*************** Header ****************/
 #header {
-	border: 2px solid pink;
 	display: grid;
 	font-family: 'Titillium Web', Helvetica, sans-serif;
+	gap: 12px;
 	grid-area: header;
 	grid-template-areas:
 		"new-scientist-banner"
 		"navigation";
 }
+
+#header * {
+	cursor: pointer;
+}
 /**** Banner ****/
 .new-scientist-banner {
 	align-items: start;
 	display: grid;
-	gap: 125px;
+	gap: 10%;
 	grid-area: new-scientist-banner;
 	grid-template-areas:
 		"newsletter   heading  subscribe-button";
@@ -102,6 +106,11 @@ body {
 	color: var(--accent-color);
 	font-size: 16px;
 	font-weight: 700;
+	margin-top: 5px;
+}
+
+.newsletter h3:hover {
+	color: #288eb7;
 }
 
 .newsletter-signup-prompt a {
@@ -112,7 +121,12 @@ body {
 	text-decoration: none;
 }
 
+.newsletter-signup-prompt a:hover {
+	text-decoration: underline;
+}
+
 .new-scientist-banner h2 {
+	align-self: start;
 	font-size: 65px;
 	font-weight: 900;
 }
@@ -124,13 +138,21 @@ body {
 	color: white;
 	font-size: 16px;
 	font-weight: 600px;
+	margin-top: 5px;
 	padding: 7.5px;
+	transition-duration: 0.2s;
 	width: 240px;
+}
+
+.subscribe-button:hover {
+	background-color: #288eb7;
 }
 /**** Navigation ****/
 .navigation {
 	align-self: center;
 	display: grid;
+	font-size: 18px;
+	font-weight: 700;
 	gap: 50px;
 	grid-template-areas:
 		"navbar   signin";
@@ -138,10 +160,34 @@ body {
 }
 .navbar > ul {
 	align-items: center;
+	color: var(--accent-color);
 	display: flex;
 	height: 100%;
 	justify-content: space-between;
 }
+
+.category:hover {
+	color: var(--accent-color);
+}
+
+.navbar li {
+	padding-bottom: 6px;
+}
+
+.navbar li:hover {
+	border-bottom: 4px solid #002837;
+	padding-bottom: 2px;
+}
+
+.space-category {
+	border-bottom: 4px solid #002837;
+	padding-bottom: 2px;
+}
+
+.category {
+	color: #002837;
+}
+
 
 .signin-search {
 	display: grid;
@@ -151,21 +197,31 @@ body {
 
 .signin,
 .search {
+	color:#002837;
 	display: grid;
 	grid-template-columns: max-content max-content;
+	font-size: 18px;
+	font-weight: 700;
 	place-items: center;
+	text-decoration: none;
 }
 
+.signin:hover,
+.search:hover {
+	color: #999;
+	text-decoration: underline;
+}
 
+.search {
+	background: none;
+	border: none;
+	font-size: 17px;
 
-
-
-
-
+}
 
 /******** Main *********/
 #main {
-	background: lightblue;
+	border: 2px solid lightblue;
 	grid-area: main;
 }
 
