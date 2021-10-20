@@ -279,9 +279,9 @@ h1 {
 .social-links button {
 	border: none;
 	border-radius: 50%;
-	height: 30px;
+	height: 35px;
 	transition-duration: 0.2s;
-	width: 30px;
+	width: 35px;
 }
 
 .social-links button:hover {
@@ -513,11 +513,11 @@ figcaption small {
 
 /******** Links  ********/
 #links {
-	border: 1px solid lightgreen;
 	display: grid;
 	grid-area: links;
 	grid-template-areas:
 		"social-links   magazine";
+	justify-content: space-between;
 }
 
 .links-below {
@@ -525,9 +525,51 @@ figcaption small {
 }
 
 .new-scientist-magazine {
+	display: grid;
+	gap: 10px;
 	grid-area: magazine;
+	grid-template-areas:
+		"magazine   links";
 }
 
+.purchase-options {
+	display: grid;
+	gap: 10px;
+	grid-template-areas: 
+		"subscribe"
+		"app"
+		"print";
+	grid-template-rows: repeat(3, max-content);
+	place-items: start;
+}
+
+.purchase-options button {
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 7px;
+	transition-duration: 0.2s;
+	width: 186px;
+}
+
+.purchase-options button:hover {
+	filter: brightness(0.85);
+}
+.magazine-subscribe-button {
+	background: var(--accent-color);
+}
+
+.magazine-app-button {
+	background: #20b2aa;
+}
+
+.magazine-print-button {
+	background: #f00;
+}
 
 /******** Related Content ********/
 #related-content {
