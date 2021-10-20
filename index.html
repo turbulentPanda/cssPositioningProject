@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles.css">
 
 <body>
-    <header class="header">
+    <header class="header" id="top">
         <div class="new-scientist-banner">
             <section class="newsletter">
                 <h3>NEWSLETTERS</h3>
@@ -226,42 +226,57 @@
         </ul>
     </aside>
     <section class="links">
-        <button class="social-icon facebook-icon">
-            <a href="#">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-        </button>
-        <button class="social-icon twitter-icon">
-            <a href="#">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-        </button>
-        <button class="social-icon whatsapp-icon">
-            <a href="#">
-                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-            </a>
-        </button>
-        <button class="social-icon linkedin-icon">
-            <a href="#">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-        </button>
-        <button class="social-icon reddit-icon">
-            <a href="#">
-                <i class="fa fa-reddit-alien" aria-hidden="true"></i>
-
-            </a>
-        </button>
-        <button class="utility-icon email-icon">
-            <a href="#">
-                <img src="assets/email_black_24dp.svg" alt="">
-            </a>
-        </button>
-        <button class="utility-icon printer-icon">
-            <a href="#">
-                <img src="assets/print_black_24dp.svg" alt="">
-            </a>
-        </button>
+        <ul>
+            <li>
+                <button class="social-icon facebook-icon">
+                    <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </button>
+            </li>
+            <li>
+                <button class="social-icon twitter-icon">
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </button>
+            </li>
+            <li>
+                <button class="social-icon whatsapp-icon">
+                    <a href="#">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                </button>
+            </li>
+            <li>
+                <button class="social-icon linkedin-icon">
+                    <a href="#">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </button>
+            </li>
+            <li>
+                <button class="social-icon reddit-icon">
+                    <a href="#">
+                        <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+                    </a>
+                </button>
+            </li>
+            <li>
+                <button class="utility-icon email-icon">
+                    <a href="#">
+                        <img src="assets/email_black_24dp.svg" alt="">
+                    </a>
+                </button>
+            </li>
+            <li>
+                <button class="utility-icon printer-icon">
+                    <a href="#">
+                        <img src="assets/print_black_24dp.svg" alt="">
+                    </a>
+                </button>
+            </li>
+        </ul>
     </section>
     <aside class="related-content">
         <h3>MORE FROM NEW SCIENTIST</h3>
@@ -309,7 +324,97 @@
         </ul>
     </aside>
     <footer class="footer">
-
+        <form action="#" method="#" class="newsletter-form">
+            <header>
+                <h3>Signup to our newsletters</h3>
+            </header>
+            <label for="email" class="newsletter-form-label">
+                Enter your email address to get started
+            </label>
+            <input type="email" name="email" id="email" class="newsletter-form-input" placeholder="Your email" required>
+            <button class="newsletter-submit-button">
+                SIGN UP
+            </button>
+        </form>
+        <ul class="useful-links">
+            <li><a href="https://www.newscientist.com/contact-us/">Contact us</a></li>
+            <li><a href="https://www.newscientist.com/help/">Help</a></li>
+            <li><a href="https://www.newscientist.com/about/">About us</a></li>
+            <li><a href="https://www.newscientist.com/privacy/">Privacy policy</a></li>
+            <li><a href="https://www.newscientist.com/cookie-policy/">Cookie policy</a></li>
+            <li><a href="https://www.newscientist.com/terms/">Terms & conditions</a></li>
+        </ul>
+        <ul class="subscriptions-and-links">
+            <li><a href="https://experience.newscientist.com/advertise/">Advertise</a></li>
+            <li><a href="https://www.newscientist.com/freelancers/">Write for us</a></li>
+            <li><a href="https://www.newscientist.com/science-events/">Events</a></li>
+            <li><a href="https://jobs.newscientist.com/?utm_medium=ILC&utm_source=NSNS&utm_campaign=NS_FOOTER">Science
+                    jobs</a></li>
+            <li><a href="https://www.newscientist.com/in216-syndication-information/">Syndication</a></li>
+            <li><a href="https://www.newscientist.com/rss-feeds/">RSS feeds</a></li>
+            <li><a
+                    href="https://subscription.newscientist.com/packages/newscientist-2021-xmas-standard-gift?promCode=17163,17162&packageCodes=TAP&offerCode=3M,12i">Gift
+                    subscriptions</a></li>
+            <li><a href="https://www.newscientist.com/subscribe/studentdiscount/">Student subscriptions</a></li>
+            <li><a href="https://landing.newscientist.com/educational-access/">Educational subscriptions</a></li>
+            <li><a href="https://landing.newscientist.com/corporate-access/">Corporate subscriptions</a></li>
+        </ul>
+        <button class="cookie-settings-button">
+            COOKIE SETTINGS
+        </button>
+        <section class="social-apps">
+            <div class="get-the-app">
+                <p>GET THE APP</p>
+                <a href="https://www.newscientist.com/appiosns/">
+                    <img src="assets/app-store-badge.svg" alt="">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.newscientist.mobile">
+                    <img src="assets/google-play-badge.svg" alt="">
+                </a>
+            </div>
+            <div class="follow-us-on-social">
+                <p>FOLLOW US</p>
+                <ul>
+                    <li>
+                        <button class="social-icon facebook-icon">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="social-icon twitter-icon">
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="social-icon linkedin-icon">
+                            <a href="#">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="social-icon pinterest-icon">
+                            <a href="#">
+                                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; Copyright New Scientist Ltd.
+            </p>
+            <a href="#top">
+                Back to top
+                <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+            </a>
+        </div>
     </footer>
 </body>
 
