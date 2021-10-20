@@ -592,8 +592,14 @@ figcaption small {
 	grid-template-rows: 1;
 }
 
+
 .more-articles-list img {
+	transition-duration: 0.2s;
 	width: 100%;
+}
+
+.more-articles-list figure:hover img {
+	filter: brightness(1.25);
 }
 
 .more-articles-list a {
@@ -607,11 +613,15 @@ figcaption small {
 	font-size: 22px;
 	line-height: 25px;
 	margin-top: 12px;
+	transition-duration: 0.2s;
 }
 
+.more-articles-list figure:hover figcaption {
+	color: var(--accent-color);
+}
 
 /******** Footer ********/
 #footer {
-	background: lightseagreen;
+	border: 1px solid lightseagreen;
 	grid-area: footer;
 }
