@@ -67,13 +67,15 @@ body {
 
 .page-container	{
 	display: grid;
+	gap: 20px;
 	grid-template-areas:
-		"header            header "
-		"main              sidebar"
-		"links                .   "
-		"related-content   related-content"
-		"footer            footer";
-	padding: 40px 20%;
+		".  header            header           ."
+		".  main              sidebar          ."
+		".  links                .             ."
+		".  related-content   related-content  ."
+		".  footer            footer           .";
+	grid-template-columns: 3fr 4fr minmax(300px, 2.5fr) 3fr;
+	padding: 40px 0;
 	width: 100%;
 }
 
@@ -224,13 +226,13 @@ body {
 	border: 2px solid lightblue;
 	display: grid;
 	gap: 15px;
+	grid-area: main;
 	grid-template-areas:
 		"main-header"
 		"main-article"
 		"newsletter-aside";
-	grid-area: main;
 }
-
+/**** Header.Main-Header ****/
 .main-header {
 	cursor: pointer;
 	display: grid;
@@ -325,6 +327,10 @@ h1 {
 	font-weight: 700;
 	text-decoration: none;
 }
+
+/**** Main > Article.Main-Article ****/
+
+
 /******** Sidebar ********/
 #sidebar {
 	background: lightgrey;
