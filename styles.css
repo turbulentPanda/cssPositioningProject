@@ -263,6 +263,7 @@ body {
 }
 
 h1 {
+	color: #000;
 	cursor: text;
 	font-size: 50px;
 	font-weight: 700;
@@ -573,9 +574,41 @@ figcaption small {
 
 /******** Related Content ********/
 #related-content {
-	background: mistyrose;
+	display: grid;
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	font-size: 24px;
+	gap: 20px;
 	grid-area: related-content;
+	grid-template-areas:
+		"heading"
+		"more-articles-list";
+	margin-bottom: 50px;
 }
+
+.more-articles-list {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1;
+}
+
+.more-articles-list img {
+	width: 100%;
+}
+
+.more-articles-list a {
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.more-articles-list figcaption {
+	font-size: 22px;
+	line-height: 25px;
+	margin-top: 12px;
+}
+
 
 /******** Footer ********/
 #footer {
