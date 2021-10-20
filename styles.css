@@ -223,7 +223,6 @@ body {
 
 /*************** Main ****************/
 #main {
-	border: 2px solid lightblue;
 	color: #4d4d4d;
 	display: grid;
 	gap: 15px;
@@ -419,10 +418,46 @@ figcaption small {
 .newsletter-aside a {
 	text-decoration: none;
 }
-/******** Sidebar ********/
+/*************** Sidebar ***************/
 #sidebar {
-	background: lightgrey;
+	display: grid;
+	gap: 5px;
 	grid-area: sidebar;
+	grid-template-areas: 
+		"sidebar-nav"
+		"sidebar-articles";
+	grid-template-rows: max-content max-content;
+}
+
+.sidebar-nav {
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	grid-area: sidebar-nav;
+}
+
+.sidebar-nav-list {
+	display: grid;
+	gap: 4px;
+	grid-template-columns: max-content repeat(3, 1fr);
+
+}
+
+.sidebar-nav-list li {
+	background: #f5f5f5;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 7px 10px;
+	text-align: center;
+	transition-duration: 0.2s;
+}
+
+.sidebar-nav-list > li:first-child {
+	background: var(--accent-color);
+	color: #fff;
+}
+
+.sidebar-nav-list > li:hover {
+	cursor: pointer;
+	filter: brightness(0.85);
 }
 
 /******** Links  ********/
