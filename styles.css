@@ -50,6 +50,9 @@ table {
 /*************** End CSS Reset  ***************/
 
 /************ GENERAL PAGE LAYOUT *************/
+:root {
+	--accent-color: #00b3e5;
+}
 
 * {
 	box-sizing: border-box;
@@ -76,8 +79,9 @@ body {
 
 /*************** Header ****************/
 #header {
-	background: pink;
+	border: 2px solid pink;
 	display: grid;
+	font-family: 'Titillium Web', Helvetica, sans-serif;
 	grid-area: header;
 	grid-template-areas:
 		"new-scientist-banner"
@@ -85,13 +89,44 @@ body {
 }
 /**** Banner ****/
 .new-scientist-banner {
-	align-items: center;
+	align-items: start;
 	display: grid;
+	gap: 125px;
 	grid-area: new-scientist-banner;
 	grid-template-areas:
 		"newsletter   heading  subscribe-button";
+	justify-content: space-between;
 }
 
+.newsletter h3 {
+	color: var(--accent-color);
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.newsletter-signup-prompt a {
+	color: #999;
+	font-family: 'PT Serif', Georgia, serif;
+	font-weight: 16px;
+	line-height: 1.25em;
+	text-decoration: none;
+}
+
+.new-scientist-banner h2 {
+	font-size: 65px;
+	font-weight: 900;
+}
+
+.subscribe-button {
+	background-color: var(--accent-color);
+	border: 0px solid white;
+	border-radius: 3px;
+	color: white;
+	font-size: 16px;
+	font-weight: 600px;
+	padding: 7.5px;
+	width: 240px;
+}
 /**** Navigation ****/
 .navigation {
 	align-self: center;
