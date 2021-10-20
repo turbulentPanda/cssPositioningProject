@@ -379,7 +379,46 @@ figcaption small {
 	font-weight: 300;
 }
 
+.newsletter-aside {
+	display: grid;
+	gap: 30px;
+}
 
+.newsletter-aside  p {
+	font-family: "PT Serif", Georgia, serif;
+	font-size: 17px;
+	font-style: italic;
+}
+
+.newsletter-aside p a {
+	color: var(--accent-color);
+}
+
+.newsletter-aside b {
+	font-weight: 700;
+}
+
+.newsletter-aside button {
+	background: #005587;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	margin: 6px;
+	padding: 8px;
+	transition-duration: 0.2s;
+}
+
+.newsletter-aside button:hover {
+	filter: brightness(1.2);
+}
+
+.newsletter-aside button a {
+	color: inherit;
+}
+
+.newsletter-aside a {
+	text-decoration: none;
+}
 /******** Sidebar ********/
 #sidebar {
 	background: lightgrey;
