@@ -687,36 +687,22 @@ figcaption small {
 	border: none;
 	border-radius: 3px;
 	color: #fff;
+	cursor: pointer;
 	font-size: 16px;
 	grid-area: button;
 	padding: 7px;
+	transition-duration: .2s;
 	width: 240px;
 }
 
-.useful-links {
-	grid-area: useful-links;
+.newsletter-submit-button:hover {
+	filter: brightness(0.85);
 }
-
-.subscriptions-and-links {
-	grid-area: subscriptions-and-links;
-}
-
-.cookie-settings-buttion {
-	grid-area: cookie-settings-button;
-}
-
-.social-apps {
-	grid-area: social apps;
-}
-
-.footer-bottom {
-	grid-area: footer-bottom;
-}
-
 /**** Link Section of Footer ****/
 #footer a {
 	text-decoration: none;
 }
+
 .useful-links {
 	display: grid;
 	grid-area: useful-links;
@@ -737,6 +723,11 @@ figcaption small {
 	font-size: 16px;
 }
 
+.useful-links a:hover,
+.subscriptions-and-links a:hover {
+	color: var(--accent-color);
+}
+
 .useful-links > li:last-child {
 	border: none;
 }
@@ -744,6 +735,7 @@ figcaption small {
 .subscriptions-and-links {
 	display: grid;
 	gap: 5px;
+	grid-area: subscriptions-and-links;
 	grid-template-areas:
 		"subcription-links-top"
 		"subscription-links-bottom";
@@ -775,17 +767,25 @@ figcaption small {
 	border: none;
 	border-radius: 3px;
 	color: #fff;
+	cursor: pointer;
 	font-family: "Titillium Web", Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: 700;
+	grid-area: cookie-settings-button;
 	margin-top: 10px;
 	padding: 7px;
+	transition-duration: .2s;
+}
+
+.cookie-settings-button:hover {
+	filter: brightness(1.3);
 }
 
 /**** Get the App and Social Media ****/
 .social-apps {
 	display: grid;
 	gap: 30px;
+	grid-area: social apps;
 	grid-template-areas:
 		"get-app   social-links";
 	justify-content: center;
@@ -834,8 +834,14 @@ figcaption small {
 .follow-us-on-social button {
 	border: none;
 	border-radius: 50%;
+	cursor: pointer;
 	height: 30px;
+	transition-duration: .2s;
 	width: 30px;
+}
+
+.follow-us-on-social button:hover {
+	filter: brightness(1.25);
 }
 
 .pinterest-icon {
@@ -849,6 +855,7 @@ figcaption small {
 /**** Footer Bottom ****/
 .footer-bottom {
 	display: grid;
+	grid-area: footer-bottom;
 	grid-template-columns: 1fr 1fr;
 	margin-bottom: 50px;
 }
