@@ -764,6 +764,20 @@ figcaption small {
 .subscription-links-bottom > ul {
 	grid-template-columns: repeat(4, max-content);
 }
+
+/**** Cookie-Settings-Button ****/
+.cookie-settings-button {
+	place-self: center;
+	background: #005587;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 10px;
+	padding: 7px;
+}
 /* TODO: REFACTOR THE CODE TO GET RID OF THIS. 
 THIS IS WAY TOO HACKY FOR MY LIKING*/
 body {
