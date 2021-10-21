@@ -196,15 +196,17 @@ body {
 	padding-bottom: 2px;
 }
 
-.space-category {
-	border-bottom: 4px solid #002837;
-	padding-bottom: 2px;
-}
+
 
 .category {
 	color: #002837;
 }
 
+.space-category {
+	border-bottom: 4px solid #002837;
+	color: var(--accent-color);
+	padding-bottom: 2px;
+}
 
 .signin-search {
 	display: grid;
@@ -639,7 +641,7 @@ figcaption small {
 
 
 #footer img {
-	width: 110px;
+	width: 125px;
 }
 /**** Newsletter Form ****/
 .newsletter-form {
@@ -777,6 +779,70 @@ figcaption small {
 	font-weight: 700;
 	margin-top: 10px;
 	padding: 7px;
+}
+
+/**** Get the App and Social Media ****/
+.social-apps {
+	display: grid;
+	gap: 30px;
+	grid-template-areas:
+		"get-app   social-links";
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.get-the-app {
+	display: grid;
+	gap: 10px;
+	grid-template-areas:
+		"para        para"
+		"app-store   play-store";
+	justify-items: start;
+}
+
+.get-the-app > p {
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	grid-area: para;
+	left: 10px;
+	position: relative;
+}
+
+.apple-store-icon {
+	display: grid;
+	grid-area: app-store;
+}
+
+
+.google-play-icon {
+	grid-area: play-store;
+}
+
+
+
+.follow-us-on-social {
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	display: grid;
+}
+
+.follow-us-on-social ul {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.follow-us-on-social button {
+	border: none;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+}
+
+.pinterest-icon {
+	background: #cb2027;
+}
+
+.follow-us-on-social a {
+	color: #fff;
 }
 /* TODO: REFACTOR THE CODE TO GET RID OF THIS. 
 THIS IS WAY TOO HACKY FOR MY LIKING*/
