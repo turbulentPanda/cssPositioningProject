@@ -624,7 +624,6 @@ figcaption small {
 /******** Footer ********/
 #footer {
 	background: #f5f5f5;
-	border: 1px solid lightseagreen;
 	display: grid;
 	grid-area: footer;
 	grid-template-areas:
@@ -642,12 +641,12 @@ figcaption small {
 #footer img {
 	width: 110px;
 }
-
+/**** Newsletter Form ****/
 .newsletter-form {
 	align-items: baseline;
 	display: grid;
 	font-size: 16px;
-	grid-gap: 20px;
+	grid-gap: 15px;
 	grid-area: newsletter-form;
 	grid-template-areas: 
 		"heading heading heading"
@@ -711,6 +710,60 @@ figcaption small {
 	grid-area: footer-bottom;
 }
 
+/**** Link Section of Footer ****/
+#footer a {
+	text-decoration: none;
+}
+.useful-links {
+	display: grid;
+	grid-area: useful-links;
+	grid-template-columns: repeat(6, max-content);
+	justify-content: center;
+	margin: 30px 0 10px 0;
+}
+
+.useful-links > li {
+	border-right: 1px solid #000;
+	padding: 4px 10px;
+}
+
+.useful-links a,
+.subscriptions-and-links a {
+	color: #000;
+	font-family: "PT Serif", Georgia, serif;
+	font-size: 16px;
+}
+
+.useful-links > li:last-child {
+	border: none;
+}
+
+.subscriptions-and-links {
+	display: grid;
+	gap: 5px;
+	grid-template-areas:
+		"subcription-links-top"
+		"subscription-links-bottom";
+	margin: 10px 0;
+}
+
+.subscriptions-and-links li {
+	border-right: 1px solid #000;
+	padding: 4px 10px;
+}
+
+.subscriptions-and-links ul {
+	display: grid;
+	justify-content: center;
+}
+
+.subscription-links-top > ul {
+	grid-template-columns: repeat(6, max-content);
+}
+
+.subscription-links-bottom > ul {
+	grid-template-columns: repeat(4, max-content);
+}
 /* TODO: REFACTOR THE CODE TO GET RID OF THIS. 
 THIS IS WAY TOO HACKY FOR MY LIKING*/
 body {
