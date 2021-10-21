@@ -655,6 +655,7 @@ figcaption small {
 		"label  input    button";
 	font-family: "PT Serif", Georgia, serif;
 	justify-content: start;
+	margin-top: 30px;
 }
 
 .newsletter-form h3 {
@@ -844,6 +845,29 @@ figcaption small {
 .follow-us-on-social a {
 	color: #fff;
 }
+
+/**** Footer Bottom ****/
+.footer-bottom {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 50px;
+}
+
+.copyright {
+	font-family: "PT Serif", Georgia, serif;
+	font-size: 14px;
+}
+
+a[href="#header"] {
+	color: #000;
+	display: flex;
+	gap: 15px;
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	justify-self: end;
+}
+
 /* TODO: REFACTOR THE CODE TO GET RID OF THIS. 
 THIS IS WAY TOO HACKY FOR MY LIKING*/
 body {
